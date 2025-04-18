@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faredown | Book Hotels & Flights</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold">FAREDOWN</h1>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#" class="hover:underline">Flights</a>
+      <a href="#" class="hover:underline">Hotels</a>
+      <a href="#" class="hover:underline">Transfers</a>
+      <a href="#" class="hover:underline">Visa</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-10 px-4 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-2">Sign In to Unlock Exclusive Bargains!</h2>
+    <p class="mb-4">Sign up or log in easily with email. Rest your password or click 'Sign Up' to get started!</p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <button class="bg-blue-600 text-white px-6 py-2 rounded">Login</button>
+      <button class="bg-green-600 text-white px-6 py-2 rounded">Sign Up</button>
+    </div>
+  </section>
+
+  <!-- Login Form -->
+  <section class="max-w-md mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <h3 class="text-lg font-semibold mb-4">Login</h3>
+    <form id="loginForm" class="space-y-4">
+      <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded" required>
+      <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded" required>
+      <button class="w-full bg-blue-600 text-white py-2 rounded" type="submit">Login</button>
+      <p class="text-sm text-center mt-2">New user? <a href="#register" class="text-blue-600">Sign up</a></p>
+    </form>
+  </section>
+
+  <!-- Register Form -->
+  <section id="register" class="max-w-md mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <h3 class="text-lg font-semibold mb-4">Register with Faredown</h3>
+    <form id="registerForm" class="space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full px-4 py-2 border rounded" required>
+      <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded" required>
+      <div class="flex gap-2">
+        <select class="w-1/3 px-2 py-2 border rounded">
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+        </select>
+        <input type="tel" placeholder="Phone" class="w-2/3 px-4 py-2 border rounded" required>
+      </div>
+      <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded" required>
+      <input type="password" placeholder="Confirm Password" class="w-full px-4 py-2 border rounded" required>
+      <button class="w-full bg-green-600 text-white py-2 rounded" type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Newsletter and Footer -->
+  <footer class="bg-gray-100 py-6 text-center">
+    <h4 class="font-semibold mb-2">Keep Yourself Updated!</h4>
+    <input type="email" placeholder="Enter your email" class="px-4 py-2 border rounded w-2/3 max-w-xs" />
+    <button class="bg-blue-600 text-white px-4 py-2 rounded ml-2 mt-2">Subscribe</button>
+    <p class="text-sm mt-4">© 2024 Faredown Bookings and Travels Pvt Ltd</p>
+  </footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Login submitted (dummy)');
+    });
+
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Registration submitted (dummy)');
+    });
+  </script>
+</body>
+</html>
